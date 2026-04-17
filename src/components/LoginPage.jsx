@@ -3,6 +3,7 @@ import { useAuth } from '../hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
 import { LogIn, Mail, Lock, Eye, EyeOff, Shield } from 'lucide-react';
 import toast from 'react-hot-toast';
+import DanaAppLogo from '../assets/Dana-App-Logo.png';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -44,7 +45,7 @@ export default function LoginPage() {
         <div className="login-brand">
           <div className="login-logo">
             <img 
-              src="/src/assets/Dana-App-Logo.png" 
+              src={DanaAppLogo}
               alt="Dana Logo" 
               className="logo-img"
               width={40}
