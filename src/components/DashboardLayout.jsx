@@ -11,6 +11,7 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import toast from 'react-hot-toast';
+import DanaAppLogo from '../assets/Dana-App-Logo.png';
 
 export default function DashboardLayout() {
   const { memberProfile, signOut } = useAuth();
@@ -57,7 +58,7 @@ export default function DashboardLayout() {
           <div className="sidebar-brand">
             <div className="sidebar-logo">
               <img 
-                src="/src/assets/Dana-App-Logo.png" 
+                src={DanaAppLogo}
                 alt="Dana Logo" 
                 className="logo-img"
                 width={22}
