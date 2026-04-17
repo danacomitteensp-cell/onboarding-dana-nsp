@@ -1,12 +1,11 @@
 {
-  
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!assets/|favicon.ico|robots.txt).*)",
+      "destination": "/index.html"
     }
   ]
 }
